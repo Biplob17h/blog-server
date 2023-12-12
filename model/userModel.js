@@ -45,6 +45,10 @@ const userSchema = mongoose.Schema(
       type: String,
       required: [true, "please provide a password"],
     },
+    photoURL: {
+      type: Buffer,
+      default: "",
+    },
   },
   {
     timeStamps: true,
